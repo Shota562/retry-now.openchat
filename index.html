@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アナウンス照合ツール</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+
+  <!-- メインコンテンツ -->
+  <div id="main-content">
+    <h2>アナウンス照合ツール</h2>
+
+    <form action="#" method="post">
+      <div>
+        <p>現在のアナウンス</p>
+        <textarea id="announce" disabled rows="5" cols="40" placeholder="ぽぴっとぽぴほ ぴオプ2周年おめでとう!!！！！！!！&#10;みんな今年もイ中良くね!!！？&#10;&#10;@ぽぴぃ代理よしきゅー。(22回成功済)より"></textarea>
+      </div>
+
+      <p>照合したいアナウンス</p>
+      <textarea id="message" name="message" rows="5" cols="40" placeholder="照合したいアナウンスを入力してください"></textarea>
+    </form>
+
+    <button id="my-btn">照合</button>
+
+    <h5>アナウンス照合結果</h5>
+    <h5>差分表示</h5>
+    <div id="diff" style="white-space: pre-wrap;"></div>
+    <p id="result" style="display:none;">未照合</p>
+
+    <h5 id="notice">
+      ※現在のアナウンスについては、<br>
+      ツール作成者側で操作をするので<br>
+      利用者側では操作ができません。
+    </h5>
+
+    <h5>© 2026 救済えるち All Rights Reserved.</h5>
+
+    <!-- 管理人ログインをコピーライト下に配置 -->
+    <div id="maintenance">
+      <h1>管理者用ログイン</h1>
+
+      <p>パスワードを入力してください</p>
+      <input type="password" id="admin-pass" placeholder="パスワード">
+      <br><br>
+      <button id="login-btn" type="button">ログイン</button>
+
+      <p id="login-result"></p>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="./script.js"></script>
+</body>
+</html>
