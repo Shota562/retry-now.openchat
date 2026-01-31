@@ -1,0 +1,48 @@
+body {
+  font-family: system-ui;
+  background: #000000;
+  color: white;
+  text-align: center;
+}
+
+#main-content {
+  display: block;
+  margin-top: 30px;
+}
+
+#maintenance {
+  margin-top: 20px;
+  border-top: 2px solid #555;
+  padding-top: 20px;
+}
+
+#login-result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #00ff00;
+}
+
+button {
+  background: #0000ff;
+  color: #ffffff;
+}
+
+#result {
+  display: none;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#notice {
+  border: 2px solid red;
+  padding: 12px;
+  display: inline-block;
+}
+
+.diff-wrong {
+  background-color: yellow;
+  color: black;
+}
