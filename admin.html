@@ -3,72 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>管理者ページ</title>
+  <title>管理人ページ</title>
   <style>
     body {
-      background: #111;
+      background: #000;
       color: #0f0;
       font-family: system-ui;
       text-align: center;
-      padding: 30px;
-    }
-    h1 { color: #0ff; }
-    textarea {
-      width: 90%;
-      max-width: 600px;
-      height: 200px;
-      margin: 20px 0;
-      font-size: 16px;
-      padding: 10px;
-      background: #222;
-      color: #0f0;
-      border: 1px solid #0f0;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background: #0f0;
-      color: #000;
-      border: none;
-      cursor: pointer;
-      margin: 10px;
+      padding-top: 50px;
     }
   </style>
 </head>
 <body>
 
-<h1>管理者ページ</h1>
-<p>アナウンス内容を編集して保存できます</p>
-
-<textarea id="admin-announce" placeholder="ここに現在のアナウンスを入力"></textarea>
-<br>
-<button id="save-btn">保存</button>
-<p id="save-result"></p>
-
-<script>
-  const saveBtn = document.getElementById("save-btn");
-  const textarea = document.getElementById("admin-announce");
-  const result = document.getElementById("save-result");
-
-  // 保存ボタン処理
-  saveBtn.addEventListener("click", () => {
-    const text = textarea.value.trim();
-    if (!text) {
-      result.textContent = "アナウンスが空です ⚠️";
-      result.style.color = "yellow";
-      return;
-    }
-    localStorage.setItem("currentAnnounce", text);
-    result.textContent = "アナウンスを保存しました ✅";
-    result.style.color = "lime";
-  });
-
-  // ページロード時に保存済みアナウンスを読み込む
-  window.addEventListener("DOMContentLoaded", () => {
-    const saved = localStorage.getItem("currentAnnounce");
-    if (saved) textarea.value = saved;
-  });
-</script>
+  <h1>管理人ページ</h1>
 
 </body>
 </html>
