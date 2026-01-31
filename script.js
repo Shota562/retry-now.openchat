@@ -3,10 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // -------------------------------
   // 既存の照合処理の上部に追加（保存アナウンスの読み込み）
   const announceEl = document.getElementById("announce");
-  const saved = localStorage.getItem("currentAnnounce");
-  if (saved) {
-    announceEl.value = saved;
-  }
 
   // -------------------------------
   // 管理者ログイン
